@@ -1,34 +1,34 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.3)  3 SEP 2025 19:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.12)  12 SEP 2025 20:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/ailam/OneDrive/BACKUP/Docs/Personal/LATEX/untitled-1.tex
-(c:/Users/ailam/OneDrive/BACKUP/Docs/Personal/LATEX/untitled-1.tex
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-04>
+**c:/Users/ailam/OneDrive/BACKUP/HOME/LatexBeginner_dotr3/untitled-1.tex
+(c:/Users/ailam/OneDrive/BACKUP/HOME/LatexBeginner_dotr3/untitled-1.tex
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-08-13>
 (C:\Data\DevTools\MiKTeX\tex/latex/base\article.cls
-Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
 (C:\Data\DevTools\MiKTeX\tex/latex/base\size10.clo
-File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count187
-\c@section=\count188
-\c@subsection=\count189
-\c@subsubsection=\count190
-\c@paragraph=\count191
-\c@subparagraph=\count192
-\c@figure=\count193
-\c@table=\count194
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
-\bibindent=\dimen140
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
 ) (C:\Data\DevTools\MiKTeX\tex/latex/vntex\vietnam.sty
 Package: vietnam 2009/07/12 v1.3 support for Vietnamese
  (C:\Data\DevTools\MiKTeX\tex/latex/base\ifthen.sty
-Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 ) (C:\Data\DevTools\MiKTeX\tex/latex/base\fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
  (C:\Data\DevTools\MiKTeX\tex/latex/vntex\t5enc.def
 File: t5enc.def 2006/11/21 v1.4 Vietnamese T5 encoding
 Now handling font encoding T5 ...
@@ -187,19 +187,18 @@ File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
    defining Unicode char U+203A (decimal 8250)
    defining Unicode char U+2423 (decimal 9251)
 ))
-LaTeX Font Info:    Trying to load font information for T5+cmr on input line 112.
+LaTeX Font Info:    Trying to load font information for T5+cmr on input line 116.
  (C:\Data\DevTools\MiKTeX\tex/latex/vntex\t5cmr.fd
 File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )) (C:\Data\DevTools\MiKTeX\tex/latex/base\inputenc.sty
-Package: inputenc 2021/02/14 v1.3d Input encoding file
+Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 ) (C:\Data\DevTools\MiKTeX\tex/latex/vntex\vncaps.tex
 File: vncaps.tex 2006/06/07 v1.1 Captions in Vietnamese
 )) (C:\Data\DevTools\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count195
-\l__pdf_internal_box=\box51
+File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count283
 ) (untitled-1.aux)
 \openout1 = `untitled-1.aux'.
 
@@ -229,24 +228,26 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 14.
- [1
+
+
+[1
 
 {C:/Users/ailam/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (untitled-1.aux)
  ***********
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-04>
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-08-13>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1259 strings out of 474486
- 18441 string characters out of 5753605
- 1927542 words of memory out of 5000000
- 23586 multiletter control sequences out of 15000+600000
- 568610 words of font info for 53 fonts, out of 8000000 for 9000
+ 1257 strings out of 468133
+ 18160 string characters out of 5440813
+ 430301 words of memory out of 5000000
+ 29915 multiletter control sequences out of 15000+600000
+ 637366 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,65p,243b,197s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,6n,65p,248b,199s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Data/DevTools/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Data/DevTools/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Data/DevTools/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Data/DevTools/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Data/DevTools/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Data/DevTools/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Data/DevTools/MiKTeX/fonts/type1/vntex/vnr/vnbx12.pfb><C:/Data/DevTools/MiKTeX/fonts/type1/vntex/vnr/vnbx9.pfb><C:/Data/DevTools/MiKTeX/fonts/type1/vntex/vnr/vnr10.pfb><C:/Data/DevTools/MiKTeX/fonts/type1/vntex/vnr/vnr12.pfb><C:/Data/DevTools/MiKTeX/fonts/type1/vntex/vnr/vnr17.pfb><C:/Data/DevTools/MiKTeX/fonts/type1/vntex/vnr/vnr9.pfb>
-Output written on untitled-1.pdf (1 page, 114190 bytes).
+Output written on untitled-1.pdf (1 page, 114105 bytes).
 PDF statistics:
  66 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
