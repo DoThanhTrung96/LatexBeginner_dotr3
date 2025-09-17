@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex simpleTex_run"] 1757682236.65777 "simpleTex_run.aux" "simpleTex_run.bbl" "simpleTex_run" 1757682239.54715 0
+["bibtex simpleTex_run"] 1757822836.09584 "simpleTex_run.aux" "simpleTex_run.bbl" "simpleTex_run" 1757822838.62811 0
   "./EVALUATION_CITE.bib" 1757682067.43205 35872 d52e53174122419472614508d9aa1048 ""
   "C:/Data/DevTools/MiKTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "simpleTex_run.aux" 1757682238.47408 2869 7fa7897c395c64bda1284a48f0ed368a "pdflatex"
+  "simpleTex_run.aux" 1757822837.73012 2869 317885caf433e531424d9e1b76ca290b "pdflatex"
   (generated)
   "simpleTex_run.bbl"
   "simpleTex_run.blg"
   (rewritten before read)
-["pdflatex"] 1757682237.12205 "c:/Users/ailam/OneDrive/BACKUP/HOME/LatexBeginner_dotr3/simpleTex_run.tex" "simpleTex_run.pdf" "simpleTex_run" 1757682239.54874 2
+["pdflatex"] 1757822836.51483 "c:/Users/ailam/OneDrive/BACKUP/HOME/LatexBeginner_dotr3/simpleTex_run.tex" "simpleTex_run.pdf" "simpleTex_run" 1757822838.62902 0
   "C:/Data/DevTools/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 1194fb36dfcb11d9ae9802f2b00b60a3 ""
   "C:/Data/DevTools/MiKTeX/fonts/tfm/adobe/courier/pcrro7t.tfm" 1136765053 1116 3b5422ca7b3feeb8bd20316af67485c1 ""
   "C:/Data/DevTools/MiKTeX/fonts/tfm/adobe/courier/pcrro8r.tfm" 1136765053 1544 4fb84cf2931ec523c2c6a08d939088ba ""
@@ -34,7 +34,6 @@
   "C:/Data/DevTools/MiKTeX/fonts/tfm/public/cm/cmsy6.tfm" 1136765053 1116 933a60c408fc0a863a92debe84b2d294 ""
   "C:/Data/DevTools/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136765053 1120 8b7d695260f3cff42e636090a8002094 ""
   "C:/Data/DevTools/MiKTeX/fonts/tfm/public/cm/cmti12.tfm" 1136765053 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
-  "C:/Data/DevTools/MiKTeX/fonts/tfm/public/cm/cmtt12.tfm" 1136765053 772 9a936b7f5e2ff0557fce0f62822f0bbf ""
   "C:/Data/DevTools/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247596666 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "C:/Data/DevTools/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Data/DevTools/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1247596667 36741 fa121aac0049305630cf160b86157ee4 ""
@@ -43,7 +42,6 @@
   "C:/Data/DevTools/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247596666 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "C:/Data/DevTools/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Data/DevTools/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1247596667 36118 fad905eba93cff5bce1e185fe980a177 ""
-  "C:/Data/DevTools/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb" 1247596666 24252 1e4e051947e12dfb50fee0b7f4e26e3a ""
   "C:/Data/DevTools/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb" 1136846148 44404 ea3d9c0311883914133975dd62a9185c ""
   "C:/Data/DevTools/MiKTeX/fonts/vf/adobe/courier/pcrro7t.vf" 1136765053 1348 83f3fb6f885de67cb91aba9ac0b7d8ac ""
   "C:/Data/DevTools/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -180,13 +178,13 @@
   "C:/Users/ailam/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1757423059.52123 14064 e72410aafbbe8a4ae85d69a01f99e995 ""
   "C:/Users/ailam/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1757681021.19554 13247242 1c3fd57f54a6efc5b758525df1c65089 ""
   "c:/Users/ailam/OneDrive/BACKUP/HOME/LatexBeginner_dotr3/simpleTex_run.tex" 1757682067.43846 12436 17823a270e65ca9ba64c41af5ca7f84a ""
-  "figures/fig1.png" 0 -1 0 ""
-  "figures/fig2.png" 0 -1 0 ""
-  "figures/fig4.png" 0 -1 0 ""
-  "figures/fig5.png" 0 -1 0 ""
-  "simpleTex_run.aux" 1757682238.47408 2869 7fa7897c395c64bda1284a48f0ed368a "pdflatex"
-  "simpleTex_run.bbl" 1757682236.96188 1329 a5e11049cdc5f908493136d349e5225e "bibtex simpleTex_run"
-  "simpleTex_run.out" 1757682238.48943 1839 410328e7f160aa73ad09ca23d85d7c0d "pdflatex"
+  "figures/fig1.png" 1757682427.06883 107325 ac3867484cfd9d4be4b6b5c73798fd53 ""
+  "figures/fig2.png" 1757682556.24123 21040 42ffda39bc9f79247bd84c93a4fd17be ""
+  "figures/fig4.png" 1757682635.15989 11569 73223b13881a148ce5c11040d7ece65a ""
+  "figures/fig5.png" 1757682642.90283 20999 33ee92e53d9a313277b601fe70aa1a24 ""
+  "simpleTex_run.aux" 1757822837.73012 2869 317885caf433e531424d9e1b76ca290b "pdflatex"
+  "simpleTex_run.bbl" 1757822836.42659 1329 a5e11049cdc5f908493136d349e5225e "bibtex simpleTex_run"
+  "simpleTex_run.out" 1757822837.73253 1839 410328e7f160aa73ad09ca23d85d7c0d "pdflatex"
   (generated)
   "simpleTex_run.aux"
   "simpleTex_run.log"
