@@ -24,5 +24,8 @@ I need your help to create a 3D drawing in LaTeX. Here are the details:
 - Please make the code well-commented so I can understand it.
 
 **Output:**
-- I expect a complete and compilable `.tex` file as the output.
+- I expect two complete and compilable `.tex` files as output:
+    - `house_drawing.tex`: A standalone LaTeX file containing the 3D drawing with an animation of its construction.
+    - `presentation.tex`: A Beamer presentation LaTeX file including both a static and an animated version of the 3D drawing.
+- The specified viewing angle will be applied to both generated `.tex` files.
 ```
