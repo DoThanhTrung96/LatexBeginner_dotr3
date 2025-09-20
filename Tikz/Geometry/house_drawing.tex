@@ -1,0 +1,66 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+
+\begin{document}
+
+% Set the viewing angle (theta, phi). The y-coordinates are inverted to simulate a left-handed system.
+\tdplotsetmaincoords{100}{-5}
+
+\begin{tikzpicture}[tdplot_main_coords, scale=0.9, font=\small]
+    % Define the coordinates of the vertices with inverted y-axis
+    \coordinate (O) at (0,0,0);
+    \coordinate (A) at (6,0,0);
+    \coordinate (C) at (0,-20,0);
+    \coordinate (B) at (6,-20,0);
+    \coordinate (E) at (0,0,5);
+    \coordinate (F) at (6,0,5);
+    \coordinate (H) at (0,-20,5);
+    \coordinate (G) at (6,-20,5);
+    \coordinate (M) at (3,0,8);
+    \coordinate (N) at (3,-20,8);
+
+    % Draw the coordinate axes
+    \draw[->] (0,0,0) -- (9,0,0) node[anchor=north east]{$x$};
+    \draw[->] (0,0,0) -- (0,-23,0) node[anchor=south west]{$y$}; % y-axis now points in the negative direction
+    \draw[->] (0,0,0) -- (0,0,10) node[anchor=south]{$z$};
+
+    % Dashed lines for coordinate visualization
+    \draw[dashed] (C) -- (O);
+    \draw[dashed] (H) -- (0,-20,0);
+    \draw[dashed] (H) -- (E);
+    \draw[dashed] (M) -- (3,0,0);
+    \draw[dashed] (B) -- (C);
+    \draw[dashed] (B) -- (A);
+    \draw[dashed] (G) -- (B);
+    \draw[dashed] (G) -- (H);
+
+    % Draw the solid lines of the house structure
+    \draw (O) -- (A) node[below]{$A(6;0;0)$};
+    \draw (O) -- (E) node[left]{$E(0;0;5)$};
+    \draw (A) -- (F);
+    \draw (E) -- (F);
+    \draw (F) -- (G);
+    \draw (G) -- (N);
+    \draw (N) -- (H);
+    \draw (H) -- (E);
+    \draw (E) -- (M) node[above right, pos=0.9]{$M(3;0;8)$};
+    \draw (F) -- (M);
+    \draw (M) -- (N);
+
+    % Add labels to the vertices (with original coordinate values)
+    \node at (O) [below left] {$O$};
+    \node at (C) [below right] {$C(0;20;0)$};
+    \node at (B) [below right] {$B$};
+    \node at (G) [right] {$G$};
+    \node at (H) [above left] {$H$};
+    \node at (F) [below right] {$F$};
+    \node at (N) [above] {$N$};
+    
+    % Add points P and Q on the lines
+    \path (O) -- (E) node[midway, left] {$P$};
+    \path (N) -- (G) node[midway, above] {$Q$};
+
+\end{tikzpicture}
+
+\end{document}
