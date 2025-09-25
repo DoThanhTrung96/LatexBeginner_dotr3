@@ -12,5 +12,8 @@ del /S /Q *.lot
 del /S /Q *.out
 del /S /Q *.synctex.gz
 del /S /Q *.toc
+del /S /Q *.nav
+del /S /Q *.snm
+del /S /Q *.vrb
 
 echo Cleanup complete.
