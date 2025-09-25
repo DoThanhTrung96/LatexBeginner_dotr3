@@ -2,60 +2,74 @@
 \usepackage{tikz}
 \usepackage{tikz-3dplot}
 \usepackage{animate}
+\usepackage{amsmath} % For \sqrt
 
 \begin{document}
 
 \begin{animateinline}[loop, poster=last, controls]{2} % 2 frames per second
-    \multiframe{15}{iFrame=1+1}{
-        \tdplotsetmaincoords{100}{-5}
+    \multiframe{10}{iFrame=1+1}{ % Adjust number of frames as needed
+        \tdplotsetmaincoords{100}{-5} % User's preferred viewing angle
 
-        \begin{tikzpicture}[tdplot_main_coords, scale=0.9, font=\small]            % Define coordinates
-            \coordinate (O) at (0,0,0);
-            \coordinate (A) at (6,0,0);
-            \coordinate (C) at (0,-20,0);
-            \coordinate (B) at (6,-20,0);
-            \coordinate (E) at (0,0,5);
-            \coordinate (F) at (6,0,5);
-            \coordinate (H) at (0,-20,5);
-            \coordinate (G) at (6,-20,5);
-            \coordinate (M) at (3,0,8);
-            \coordinate (N) at (3,-20,8);
+        \begin{tikzpicture}[tdplot_main_coords, scale=1.0, font=\small]
+            % Define parameter 'a'
+            \pgfmathsetmacro{\a}{4}
+            \pgfmathsetmacro{\hs}{\a*sqrt(5)/2} % Height of S
+
+            % Define coordinates
+            \coordinate (A) at (0,0,0);
+            \coordinate (B) at (\a,0,0);
+            \coordinate (C) at (\a,\a,0);
+            \coordinate (D) at (0,\a,0);
+            \coordinate (I) at (\a/2,0,0); % Midpoint of AB, projection of S
+            \coordinate (S) at (\a/2,0,\hs);
 
             % Frame 1: Axes
             \ifnum\iFrame>0
-                \draw[->] (0,0,0) -- (9,0,0) node[anchor=north east]{$x$};
-                \draw[->] (0,0,0) -- (0,-23,0) node[anchor=south west]{$y$};
-                \draw[->] (0,0,0) -- (0,0,10) node[anchor=south]{$z$};
+                \draw[->] (0,0,0) -- (\a+1,0,0) node[anchor=north east]{$x$};
+                \draw[->] (0,0,0) -- (0,\a+1,0) node[anchor=south west]{$y$};
+                \draw[->] (0,0,0) -- (0,0,\hs+1) node[anchor=south]{$z$};
             \fi
 
-            % Frame 2-6: Dashed lines
-            \ifnum\iFrame>1 \draw[dashed] (C) -- (O); \fi
-            \ifnum\iFrame>2 \draw[dashed] (H) -- (0,-20,0); \draw[dashed] (H) -- (E); \fi
-            \ifnum\iFrame>3 \draw[dashed] (M) -- (3,0,0); \fi
-            \ifnum\iFrame>4 \draw[dashed] (B) -- (C); \draw[dashed] (B) -- (A); \fi
-            \ifnum\iFrame>5 \draw[dashed] (G) -- (B); \draw[dashed] (G) -- (H); \fi
+            % Frame 2: Base (dashed AD, CD)
+            \ifnum\iFrame>1
+                \draw[dashed] (A) -- (D);
+                \draw[dashed] (D) -- (C);
+            \fi
 
-            % Frame 7-14: Solid lines
-            \ifnum\iFrame>6 \draw (O) -- (A) node[below]{$A(6;0;0)$}; \draw (O) -- (E) node[left]{$E(0;0;5)$}; \fi
-            \ifnum\iFrame>7 \draw (A) -- (F); \draw (E) -- (F); \fi
-            \ifnum\iFrame>8 \draw (F) -- (G); \fi
-            \ifnum\iFrame>9 \draw (G) -- (N); \fi
-            \ifnum\iFrame>10 \draw (N) -- (H); \fi
-            \ifnum\iFrame>11 \draw (H) -- (E); \fi
-            \ifnum\iFrame>12 \draw (E) -- (M) node[above right, pos=0.9]{$M(3;0;8)$}; \draw (F) -- (M); \fi
-            \ifnum\iFrame>13 \draw (M) -- (N); \fi
+            % Frame 3: Base (solid AB, BC)
+            \ifnum\iFrame>2
+                \draw (A) -- (B);
+                \draw (B) -- (C);
+            \fi
 
-            % Frame 15: Labels
-            \ifnum\iFrame>14
-                \node at (O) [below left] {$O$};
-                \node at (C) [below right] {$C(0;20;0)$};
+            % Frame 4: Height SI (dashed)
+            \ifnum\iFrame>3
+                \draw[dashed] (S) -- (I);
+            \fi
+
+            % Frame 5-8: Edges from S (solid)
+            \ifnum\iFrame>4 \draw (S) -- (A); \fi
+            \ifnum\iFrame>5 \draw (S) -- (B); \fi
+            \ifnum\iFrame>6 \draw (S) -- (C); \fi
+            \ifnum\iFrame>7 \draw (S) -- (D); \fi
+
+            % Frame 9: Angle SC and base
+            \ifnum\iFrame>8
+                \draw[dashed] (I) -- (C); % Projection of SC onto base
+                \tdplotsetthetaplanecoords{0} % Set plane for angle
+                \tdplotdrawarc[tdplot_rotated_coords, ->]{(I)}{0.5}{0}{atan2(\hs,veclen(\a/2,\a))}{anchor=north east, color=blue}{$45^\circ$}
+            \fi
+
+            % Frame 10: Labels
+            \ifnum\iFrame>9
+                \node at (A) [below left] {$A$};
                 \node at (B) [below right] {$B$};
-                \node at (G) [right] {$G$};
-                \node at (H) [above left] {$H$};
-                \node at (F) [below right] {$F$};
-                \node at (N) [above] {$N$};
-                \path (O) -- (E) node[midway, left] {$P$};
-                \path (N) -- (G) node[midway, above] {$Q$};
+                \node at (C) [below right] {$C$};
+                \node at (D) [above left] {$D$};
+                \node at (S) [above] {$S$};
+                \node at (I) [below] {$I$};
+                \node at ($(\a/2,0,0)!0.5!(\a,0,0)$) [below] {$a$};
+                \node at ($(0,\a/2,0)!0.5!(0,\a,0)$) [left] {$a$};
             \fi
         \end{tikzpicture}
     }
