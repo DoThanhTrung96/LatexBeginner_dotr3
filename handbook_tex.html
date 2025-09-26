@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaTeX Handbook for Beginners</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f7f9;
+        }
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h1 { text-align: center; }
+        code { background-color: #ecf0f1; padding: 2px 5px; border-radius: 4px; font-family: "Courier New", Courier, monospace; }
+        pre { background-color: #2c3e50; color: #f8f8f2; border: 1px solid #bdc3c7; padding: 15px; border-radius: 5px; overflow-x: auto; }
+        nav { background-color: #fff; padding: 15px; border-radius: 5px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        nav ul { list-style-type: none; padding: 0; }
+        nav ul li a { text-decoration: none; color: #2980b9; font-weight: bold; }
+        nav ul li a:hover { color: #3498db; }
+        .container { background-color: #fff; padding: 25px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .note { background-color: #eafaf1; border-left: 5px solid #2ecc71; padding: 15px; margin: 15px 0; }
+
+        /* LaTeX Output Simulation */
+        .latex-output {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 25px;
+            margin: 20px 0;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .latex-output h3 { border: none; font-size: 22px; text-align: center; margin-bottom: 20px;}
+        .latex-output p { margin-bottom: 10px; }
+        .latex-output .equation {
+            text-align: center;
+            font-style: italic;
+            font-size: 18px;
+            margin: 15px 0;
+        }
+        .latex-output .fbox {
+            border: 1px solid black;
+            padding: 8px;
+            display: inline-block;
+        }
+        .latex-output .tcolorbox {
+            border: 1px solid #BDBDBD;
+            background-color: #F5F5F5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .latex-output .tcolorbox-title {
+            font-weight: bold;
+            background-color: #E0E0E0;
+            padding: 10px 15px;
+            margin: -15px -15px 10px -15px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom: 1px solid #BDBDBD;
+        }
+        .latex-output .page-footer {
+            border-top: 1px solid #333;
+            padding-top: 10px;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Personal LaTeX Handbook</h1>
+        <nav>
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#text">1. Text Formatting (With Previews)</a></li>
+                <li><a href="#boxes">2. Creating Boxes and Containers</a></li>
+                <li><a href="#equations">3. Mathematical Equations</a></li>
+                <li><a href="#pagenumber">4. Page Numbering and Headers</a></li>
+                <li><a href="#drawing">5. Drawing with TikZ</a></li>
+                <li><a href="#templates">6. Practical Templates</a></li>
+            </ul>
+        </nav>
+
+        <section id="text">
+            <h2>1. Text Formatting (With Previews)</h2>
+            
+            <h3>1.1. Text Style and Color</h3>
+            <p>To use colors, you must first add <code>\usepackage{xcolor}</code> to your preamble.</p>
+            <pre><code>This is \textbf{bold text}.\nThis is \textit{italic text}.\nThis is \textcolor{red}{red text}.\nWe can also have \textcolor{blue}{nested styles}, like \textbf{\textcolor{blue}{bold blue text}}.</code></pre>
+            <h4>Output Preview:</h4>
+            <div class="latex-output">
+                <p>This is <b>bold text</b>.</p>
+                <p>This is <i>italic text</i>.</p>
+                <p>This is <span style="color:red;">red text</span>.</p>
+                <p>We can also have <span style="color:blue;">nested styles</span>, like <b style="color:blue;">bold blue text</b>.</p>
+            </div>
+
+            <h3>1.2. Text Size</h3>
+            <pre><code>{\tiny tiny} {\small small} \normalsize normal {\large large} {\Huge HUGE!}</code></pre>
+            <h4>Output Preview:</h4>
+            <div class="latex-output">
+                <p><span style="font-size: 0.7em;">tiny</span> <span style="font-size: 0.9em;">small</span> <span style="font-size: 1em;">normal</span> <span style="font-size: 1.2em;">large</span> <span style="font-size: 2em;">HUGE!</span></p>
+            </div>
+        </section>
+
+        <section id="boxes">
+            <h2>2. Creating Boxes and Containers</h2>
+            <p>Boxes are great for highlighting information or structuring content.</p>
+
+            <h3>2.1. Simple Boxes with <code>\fbox</code></h3>
+            <p>The <code>\fbox</code> command puts a simple frame around any content.</p>
+            <pre><code>\fbox{This is a simple framed box.}</code></pre>
+            <h4>Output Preview:</h4>
+            <div class="latex-output">
+                <div class="fbox">This is a simple framed box.</div>
+            </div>
+
+            <h3>2.2. Advanced Boxes with <code>tcolorbox</code></h3>
+            <p>For full control over colors, spacing, and titles, the <code>tcolorbox</code> package is essential. Add <code>\usepackage{tcolorbox}</code> to your preamble.</p>
+            <pre><code>% A basic colored box
+\begin{tcolorbox}
+    This is a tcolorbox. It has a light grey background and a thin border by default.
+\end{tcolorbox}
+
+% A box with a title and custom colors
+\begin{tcolorbox}[
+    colback=blue!5!white,  % Background color: 5% blue
+    colframe=blue!75!black, % Frame color: 75% blue
+    title=My Titled Box]
+    This box has a title and custom colors for the background and frame.
+\end{tcolorbox}</code></pre>
+            <h4>Output Preview:</h4>
+            <div class="latex-output">
+                <div class="tcolorbox">
+                    This is a tcolorbox. It has a light grey background and a thin border by default.
+                </div>
+                <div class="tcolorbox" style="background-color: #E3F2FD; border-color: #1E88E5;">
+                    <div class="tcolorbox-title" style="background-color: #BBDEFB; border-bottom-color: #1E88E5;">My Titled Box</div>
+                    This box has a title and custom colors for the background and frame.
+                </div>
+            </div>
+        </section>
+
+        <section id="equations">
+            <h2>3. Mathematical Equations</h2>
+            <div class="note">
+                <h4>Best Practice: Avoid <code>$$...$$</code></h4>
+                <p>Always use <code>\[ ... \]</code> or the <code>equation</code> environment instead of <code>$$...$$</code> to avoid potential spacing problems.</p>
+            </div>
+            <pre><code>\begin{equation}
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\label{eq:quadratic}
+\end{equation}</code></pre>
+            <h4>Output Preview:</h4>
+            <div class="latex-output">
+                <div class="equation">x = &minus;b &plusmn; &radic;(b&sup2; &minus; 4ac) / 2a</div>
+            </div>
+        </section>
+
+        <section id="pagenumber">
+            <h2>4. Page Numbering and Headers</h2>
+            <p>By default, LaTeX numbers your pages. To customize this, the <code>fancyhdr</code> package is the standard choice. Add <code>\usepackage{fancyhdr}</code> to your preamble.</p>
+            <pre><code>% Apply this in your preamble
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\rhead{Linear Algebra Exam}
+\lhead{Your Name}
+\cfoot{\thepage} % Puts the page number in the center of the footer</code></pre>
+            <h4>Output Preview:</h4>
+            <div class="latex-output">
+                <h3>Page Content Would Be Here</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+                <div class="page-footer">
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>Your Name</span>
+                        <span>Linear Algebra Exam</span>
+                    </div>
+                    <div style="text-align: center; margin-top: 15px;">1</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="drawing">
+            <h2>5. Drawing with TikZ</h2>
+            <p>TikZ allows you to create vector graphics directly with code.</p>
+            <pre><code>\begin{tikzpicture}
+    \draw[blue, thick] (0,0) circle (1.5cm);
+    \fill[red] (0,0) rectangle (1,1);
+    \node at (0, -2) {A circle and a square};
+\end{tikzpicture}</code></pre>
+            <h4>Output Preview:</h4>
+            <div class="latex-output" style="text-align:center;">
+                <svg width="150" height="150" viewBox="-2 -2.5 4 4">
+                    <circle cx="0" cy="0" r="1.5" stroke="blue" stroke-width="0.1" fill="none" />
+                    <rect x="0" y="-1" width="1" height="1" fill="red" />
+                    <text x="0" y="2" text-anchor="middle" font-size="0.5">A circle and a square</text>
+                </svg>
+                <p style="font-size:12px; font-style:italic; color:#555;">(This is a simplified SVG preview of the TikZ output)</p>
+            </div>
+        </section>
+
+        <section id="templates">
+            <h2>6. Practical Templates</h2>
+            <p>These templates incorporate the concepts discussed above.</p>
+            <h3>University Exam Template</h3>
+            <pre><code>\documentclass{article}
+\usepackage{amsmath, amsthm}
+\usepackage{geometry}
+\usepackage[svgnames]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{fancyhdr}
+
+\geometry{a4paper, margin=1in}
+
+% Header and Footer Setup
+\pagestyle{fancy}
+\fancyhf{} 
+\lhead{MATH 201: Linear Algebra}
+\rhead{Final Exam}
+\cfoot{Page \thepage}
+
+% Define a custom problem box
+\newtcolorbox{problembox}[2][]{
+    title=#2, 
+    colback=WhiteSmoke, 
+    colframe=DarkSlateGray, 
+    fonttitle=\bfseries, 
+    #1
+}
+
+\begin{document}
+
+\begin{problembox}{Problem 1: Matrix Operations (20 Points)}
+    Given the matrices...
+\end{problembox}
+
+\begin{problembox}{Problem 2: Proof (25 Points)}
+    Prove that for any invertible matrix $A$, the inverse $A^{-1}$ is unique.
+\end{problembox}
+
+\end{document}</code></pre>
+        </section>
+
+    </div>
+</body>
+</html>
